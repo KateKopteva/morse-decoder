@@ -53,7 +53,7 @@ function decode(expr) {
     let index = arr.length;
     for (let i = 0; index-- > 0; i++){
         for (let key in MORSE_TABLE) {
-            if (MORSE_TABLE.hasOwnProperty(key) && arr[i] === key) { 
+            if (arr[i] === key) { 
                 letter[i] = MORSE_TABLE[arr[i]];
                 letter.push(word);
             }                                                   //['h', 'e', 'l', 'l', 'o', undefined, 'w', 'o', 'r', 'l', 'd', undefined]
